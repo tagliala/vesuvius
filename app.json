@@ -1,0 +1,28 @@
+{
+  "name": "Vesuvius - A Vulcan replacement",
+  "description": "Compile libraries on heroku",
+  "keywords": [
+    "GEOS",
+    "PROJ4",
+    "Heroku",
+    "Compile libraries"
+  ],
+  "website": "https://github.com/tagliala/vesuvius",
+  "repository": "https://github.com/tagliala/vesuvius",
+  "success_url": "/",
+  "scripts": {
+  },
+  "env": {
+    "DEPLOY_TASKS": "build_libraries",
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    },
+    {
+      "url": "https://github.com/gunpowderlabs/buildpack-ruby-rake-deploy-tasks"
+    }
+  ],
+  "addons": [
+  ]
+}

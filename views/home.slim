@@ -1,0 +1,32 @@
+doctype html
+html lang='en'
+  head
+    meta charset='utf-8'
+    meta content='IE=edge' http-equiv='X-UA-Compatible'
+    meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0'
+    / The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+
+    title= 'Vesuvius - A Vulcan replacement'
+
+    link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ' crossorigin='anonymous'
+
+  body
+    .container
+
+      h1.display-2.mt-4 Vesuvius
+      h2.display-4
+        ' A
+        a> href='https://github.com/heroku/vulcan' Vulcan
+        ' replacement
+      hr.mb-4
+      h3 Compiled libraries:
+      ul
+        - Dir[File.join('public', 'libraries', '*.tar.gz')].each do |library|
+          li
+            a href=library.gsub(/\Apublic\//, '')
+              = File.basename(library)
+      hr.mt-4
+      footer
+        strong> &copy; 2017 Geremia Taglialatela
+        br
+        a href='https://github.com/tagliala/vesuvius' Vesuvius @ GitHub
