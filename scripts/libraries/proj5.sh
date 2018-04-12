@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIBRARY_VERSION=5.0.0
+LIBRARY_VERSION=5.0.1
 
 curl -O http://download.osgeo.org/proj/proj-${LIBRARY_VERSION}.tar.gz \
   && tar -xvf proj-${LIBRARY_VERSION}.tar.gz \
