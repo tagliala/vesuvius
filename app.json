@@ -1,6 +1,6 @@
 {
   "name": "Vesuvius - A Vulcan replacement",
-  "description": "Compile libraries on heroku",
+  "description": "Compile libraries on Heroku",
   "keywords": [
     "GEOS",
     "PROJ4",
