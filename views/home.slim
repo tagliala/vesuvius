@@ -22,7 +22,7 @@ html lang='en'
       hr.mb-4
       h3 Compiled libraries:
       ul
-        - Dir[File.join('public', 'libraries', '*.tar.gz')].each do |library|
+        - Dir[File.join('public', 'libraries', '*.tar.gz')].sort.each do |library|
           li
             a href=library.gsub(/\Apublic\//, '')
               = File.basename(library)
