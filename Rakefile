@@ -25,7 +25,7 @@ task :build_libraries do
     end
   end
 
-  puts "-----> Vesuvius is building libraries, please wait"
+  puts '-----> Vesuvius is building libraries, please wait'
 
   run_scripts
 end
