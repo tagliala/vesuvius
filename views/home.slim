@@ -6,7 +6,8 @@ html lang='en'
     meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0'
     / The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
 
-    title= 'Vesuvius - A Vulcan replacement'
+    title
+      | Vesuvius - A Vulcan replacement
     meta name='description' content='Build libraries on Heroku without pain'
 
     link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' integrity='sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS' crossorigin='anonymous'
@@ -24,7 +25,7 @@ html lang='en'
       ul
         - Dir[File.join('public', 'libraries', '*.tar.gz')].sort.each do |library|
           li
-            a href=library.gsub(/\Apublic\//, '')
+            a href=library.gsub(%r{\Apublic/}, '')
               = File.basename(library)
       hr.mt-4
       footer
