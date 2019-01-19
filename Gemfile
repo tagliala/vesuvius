@@ -14,3 +14,7 @@ gem 'sinatra', '~> 2.0'
 gem 'rake', '~> 12.3'
 gem 'slim', '~> 4.0'
 gem 'thin', '~> 1.7'
+
+group :development do
+  gem 'rubocop', '~> 0.63.0'
+end
