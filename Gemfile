@@ -16,5 +16,5 @@ gem 'slim', '~> 4.0'
 gem 'thin', '~> 1.7'
 
 group :development do
-  gem 'rubocop', '~> 0.63.0'
+  gem 'rubocop', '~> 0.63.1'
 end
