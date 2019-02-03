@@ -21,7 +21,10 @@ html lang='en'
         a> href='https://github.com/heroku/vulcan' Vulcan
         ' replacement
       hr.mb-4
-      h3 Compiled libraries:
+      h3
+        ' Compiled libraries (on
+        code> heroku-18
+        ' stack):
       ul
         - Dir[File.join('public', 'libraries', '*.tar.gz')].sort.each do |library|
           li
