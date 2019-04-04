@@ -3,7 +3,6 @@
 task :build_libraries do
   BASE_DIR          = File.dirname(__FILE__)
   HEROKU_VENDOR_DIR = '/app/.heroku/vendor'
-  LIBRARIES_PARTIAL = File.join(BASE_DIR, 'views', 'libraries.slim')
 
   def with_temporary_folder(tmp_dir)
     FileUtils.mkdir_p [tmp_dir, HEROKU_VENDOR_DIR]
@@ -14,7 +13,7 @@ task :build_libraries do
   def run_scripts
     scripts = Dir[File.join(BASE_DIR, 'scripts', 'libraries', '*.sh')]
 
-    scripts.each_with_index do |file, index|
+    scripts.sort.each_with_index do |file, index|
       puts "\n-----> Running #{File.basename(file)} (#{index + 1}/#{scripts.size})"
       tmp_dir = "#{BASE_DIR}/tmp/#{File.basename(file, '.sh')}"
 
