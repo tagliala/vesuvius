@@ -21,15 +21,19 @@ It comes with [proj.4](http://proj4.org/index.html) and [GEOS](https://trac.osge
 
 1. Clone the repo
 2. Create a new Heroku application
-3. Set your buildpack to Heroku's default Ruby buildpack
+3. Set your buildpack to Heroku's apt buildpack
 ```sh
-heroku buildpacks:set heroku/ruby
+heroku buildpacks:set https://github.com/heroku/heroku-buildpack-apt
 ```
-4. Append the buildpack-ruby-rake-deploy-tasks to your buildpack list
+4. Add Heroku's Ruby buildpack
+```sh
+heroku buildpacks:add heroku/ruby
+```
+5. Append the buildpack-ruby-rake-deploy-tasks to your buildpack list
 ```sh
 heroku buildpacks:add https://github.com/gunpowderlabs/buildpack-ruby-rake-deploy-tasks
 ```
-5. Configure DEPLOY_TASK environment variable
+6. Configure DEPLOY_TASK environment variable
 ```sh
 heroku config:set DEPLOY_TASKS=build_libraries
 ```
