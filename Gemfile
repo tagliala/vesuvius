@@ -7,7 +7,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '2.6.2'
+ruby '2.6.3'
 
 gem 'sinatra', '~> 2.0'
 
@@ -16,5 +16,6 @@ gem 'slim', '~> 4.0'
 gem 'thin', '~> 1.7'
 
 group :development do
-  gem 'rubocop', '~> 0.67.2'
+  gem 'rubocop', '~> 0.68.1'
+  gem 'rubocop-performance', '~> 1.2'
 end
