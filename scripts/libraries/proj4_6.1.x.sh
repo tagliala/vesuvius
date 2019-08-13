@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIBRARY_VERSION=6.1.0
+LIBRARY_VERSION=6.1.1
 
 # Fix sqlite3 flags
 # The standard parameter `-lsqlite3` was being replaced at link time by
