@@ -29,14 +29,6 @@ heroku buildpacks:set https://github.com/heroku/heroku-buildpack-apt
 ```sh
 heroku buildpacks:add heroku/ruby
 ```
-5. Append the buildpack-ruby-rake-deploy-tasks to your buildpack list
-```sh
-heroku buildpacks:add https://github.com/gunpowderlabs/buildpack-ruby-rake-deploy-tasks
-```
-6. Configure DEPLOY_TASK environment variable
-```sh
-heroku config:set DEPLOY_TASKS=build_libraries
-```
 
 Deploy and navigate to your application's root path.
 

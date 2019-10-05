@@ -13,7 +13,6 @@
   "scripts": {
   },
   "env": {
-    "DEPLOY_TASKS": "build_libraries",
   },
   "buildpacks": [
     {
@@ -21,9 +20,6 @@
     },
     {
       "url": "heroku/ruby"
-    },
-    {
-      "url": "https://github.com/gunpowderlabs/buildpack-ruby-rake-deploy-tasks"
     }
   ],
   "addons": [
