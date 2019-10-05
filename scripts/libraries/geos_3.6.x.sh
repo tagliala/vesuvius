@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIBRARY_VERSION=3.6.3
+LIBRARY_VERSION=3.6.4
 
 curl -O http://download.osgeo.org/geos/geos-${LIBRARY_VERSION}.tar.bz2 \
   && tar -xjvf geos-${LIBRARY_VERSION}.tar.bz2 \
