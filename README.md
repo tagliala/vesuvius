@@ -48,7 +48,7 @@ This is an example for the GEOS library:
 ```sh
 #!/bin/bash
 
-LIBRARY_VERSION=3.7.1
+LIBRARY_VERSION=3.7.3
 
 curl -O http://download.osgeo.org/geos/geos-${LIBRARY_VERSION}.tar.bz2 \
   && tar -xjvf geos-${LIBRARY_VERSION}.tar.bz2 \
@@ -60,7 +60,7 @@ curl -O http://download.osgeo.org/geos/geos-${LIBRARY_VERSION}.tar.bz2 \
 
 ## How to use the compiled libraries
 
-Take a look at [Heroku buildpack: Vendor Binaries](https://github.com/peterkeen/heroku-buildpack-vendorbinaries).
+Take a look at [heroku-buildpack-vendorbinaries](https://github.com/diowa/heroku-buildpack-vendorbinaries).
 
 ## Authors
 
