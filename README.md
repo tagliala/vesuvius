@@ -37,10 +37,10 @@ Deploy and navigate to your application's root path.
 All you need to do is create a bash script to compile your library.
 
 This is an example for the GEOS library:
-```sh
+```shell
 #!/bin/bash
 
-LIBRARY_VERSION=3.7.3
+LIBRARY_VERSION=3.8.0
 
 curl -O http://download.osgeo.org/geos/geos-${LIBRARY_VERSION}.tar.bz2 \
   && tar -xjvf geos-${LIBRARY_VERSION}.tar.bz2 \
