@@ -34,7 +34,8 @@ Deploy and navigate to your application's root path.
 
 ## Example script
 
-All you need to do is create a bash script to compile your library.
+All you need to do is create a bash script to compile your library and save it
+under the `scripts/libraries` folder.
 
 This is an example for the GEOS library:
 ```shell
