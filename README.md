@@ -41,7 +41,7 @@ This is an example for the GEOS library:
 ```shell
 #!/bin/bash
 
-LIBRARY_VERSION=3.8.0
+LIBRARY_VERSION=3.8.1
 
 curl -O http://download.osgeo.org/geos/geos-${LIBRARY_VERSION}.tar.bz2 \
   && tar -xjvf geos-${LIBRARY_VERSION}.tar.bz2 \
