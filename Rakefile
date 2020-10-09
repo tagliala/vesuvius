@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
+BASE_DIR          = File.dirname(__FILE__)
+HEROKU_VENDOR_DIR = '/app/.heroku/vendor'
+
 namespace :assets do
   task :precompile do
-    BASE_DIR          = File.dirname(__FILE__)
-    HEROKU_VENDOR_DIR = '/app/.heroku/vendor'
-
     def with_temporary_folder(tmp_dir)
       FileUtils.mkdir_p [tmp_dir, HEROKU_VENDOR_DIR]
       yield
