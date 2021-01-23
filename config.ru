@@ -1,4 +1,4 @@
 # frozen_string_literal: true
 
-require './hello'
+require './vesuvius'
 run Sinatra::Application

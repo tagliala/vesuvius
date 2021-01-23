@@ -1,1 +1,1 @@
-web: bundle exec ruby vesuvius.rb -p $PORT
+web: bundle exec puma
