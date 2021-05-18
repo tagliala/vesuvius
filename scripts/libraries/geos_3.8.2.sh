@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIBRARY_VERSION=3.8.1
+LIBRARY_VERSION=3.8.2
 
 curl -O https://ftp.osuosl.org/pub/osgeo/download/geos/geos-${LIBRARY_VERSION}.tar.bz2 \
   && tar -xjvf geos-${LIBRARY_VERSION}.tar.bz2 \
