@@ -11,7 +11,7 @@ ruby '3.0.0'
 
 gem 'sinatra', '~> 2.1'
 
-gem 'puma', '~> 5.2'
+gem 'puma', '~> 5.3'
 
 gem 'rake', '~> 13.0'
 gem 'slim', '~> 4.1'
