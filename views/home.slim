@@ -28,6 +28,10 @@ html lang='en'
           li
             a href=library.gsub(%r{\Apublic/}, '')
               = File.basename(library)
+            |  (
+            a href="#{library.gsub(%r{\Apublic/}, '')}.md5"
+              | md5
+            | )
       hr.mt-4
       footer
         strong> &copy; 2021 Geremia Taglialatela
