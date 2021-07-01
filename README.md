@@ -11,7 +11,7 @@ Even with `heroku run bash`, compiling stuff on Heroku was painful, time consumi
 
 With **Vesuvius**, this is no longer the case. During the deploy, **Vesuvius** will run all scripts located in `/scripts/libraries` and will move output files to a public directory.
 
-It comes with [proj.4](http://proj4.org/index.html) and [GEOS](https://trac.osgeo.org/geos/) as examples.
+It comes with [PROJ](https://proj.org/) and [GEOS](https://trac.osgeo.org/geos/) as examples.
 
 ## Automatic Setup
 
@@ -41,14 +41,18 @@ This is an example for the GEOS library:
 ```shell
 #!/bin/bash
 
-LIBRARY_VERSION=3.9.0
+LIBRARY_VERSION=3.9.1
+OUTPUT_LIBRARY_NAME="geos-${LIBRARY_VERSION}-heroku.tar.gz"
 
-curl -O http://download.osgeo.org/geos/geos-${LIBRARY_VERSION}.tar.bz2 \
+curl -O https://ftp.osuosl.org/pub/osgeo/download/geos/geos-${LIBRARY_VERSION}.tar.bz2 \
   && tar -xjvf geos-${LIBRARY_VERSION}.tar.bz2 \
-  && cd geos-${LIBRARY_VERSION} \
-  && ./configure --prefix=${HEROKU_VENDOR_DIR} \
-  && make && make install \
-  && tar -C ${HEROKU_VENDOR_DIR} -czvf ${TARGET_DIR}/geos-${LIBRARY_VERSION}-heroku.tar.gz .
+  && mkdir build \
+  && cd build \
+  && cmake ../geos-${LIBRARY_VERSION} -DCMAKE_INSTALL_PREFIX=${HEROKU_VENDOR_DIR} -DBUILD_TESTING=false >&2 >&2 \
+  && make -j4 >&2 \
+  && make install \
+  && tar -C ${HEROKU_VENDOR_DIR} -czvf ${TARGET_DIR}/${OUTPUT_LIBRARY_NAME} . \
+  && (cd ${TARGET_DIR} && exec md5sum ${OUTPUT_LIBRARY_NAME} > ${OUTPUT_LIBRARY_NAME}.md5)
 ```
 
 ## How to use the compiled libraries
@@ -59,5 +63,5 @@ Take a look at [heroku-buildpack-vendorbinaries](https://github.com/diowa/heroku
 
 **Geremia Taglialatela**
 
-+ http://github.com/tagliala
-+ http://twitter.com/gtagliala
++ https://github.com/tagliala
++ https://twitter.com/gtagliala
