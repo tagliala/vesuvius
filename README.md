@@ -59,6 +59,8 @@ curl -O https://ftp.osuosl.org/pub/osgeo/download/geos/geos-${LIBRARY_VERSION}.t
 
 Take a look at [heroku-buildpack-vendorbinaries](https://github.com/diowa/heroku-buildpack-vendorbinaries).
 
+[RGeo-Sinatra](https://rgeo-sinatra.herokuapp.com/) uses Vesuvius
+
 ## Authors
 
 **Geremia Taglialatela**
