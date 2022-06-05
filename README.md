@@ -41,7 +41,7 @@ This is an example for the GEOS library:
 ```shell
 #!/bin/bash
 
-LIBRARY_VERSION=3.10.2
+LIBRARY_VERSION=3.10.3
 OUTPUT_LIBRARY_NAME="geos-${LIBRARY_VERSION}-heroku.tar.gz"
 
 curl -O https://ftp.osuosl.org/pub/osgeo/download/geos/geos-${LIBRARY_VERSION}.tar.bz2 \
