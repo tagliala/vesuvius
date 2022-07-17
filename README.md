@@ -13,6 +13,11 @@ With **Vesuvius**, this is no longer the case. During the deploy, **Vesuvius** w
 
 It comes with [PROJ](https://proj.org/) and [GEOS](https://libgeos.org/) as examples.
 
+## Disclaimer
+
+Libraries build by Vesuvius are for demonstration purposes only. Do not use them in you
+production environment because they may change anytime.
+
 ## Automatic Setup
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
