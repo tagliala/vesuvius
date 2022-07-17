@@ -18,6 +18,10 @@ It comes with [PROJ](https://proj.org/) and [GEOS](https://libgeos.org/) as exam
 Libraries build by Vesuvius are for demonstration purposes only. Do not use them in you
 production environment because they may change anytime.
 
+### Old Stacks
+
+- Heroku 20: https://vesuvius-20.herokuapp.com/
+
 ## Automatic Setup
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)

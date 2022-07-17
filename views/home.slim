@@ -21,7 +21,7 @@ html lang='en'
       hr.mb-4
       h3
         ' Compiled libraries (on
-        code> heroku-20
+        code> heroku-22
         ' stack):
       ul
         - Dir[File.join('public', 'libraries', '*.tar.gz')].sort.each do |library|
@@ -32,6 +32,13 @@ html lang='en'
             a href="#{library.gsub(%r{\Apublic/}, '')}.md5"
               | md5
             | )
+      hr.mb-4
+      h4.text-muted
+        ' Old stacks:
+      ul
+        li
+          a href='https://vesuvius-20.herokuapp.com/'
+            | Heroku 20
       hr.mt-4
       footer
         strong> &copy; 2022 Geremia Taglialatela
