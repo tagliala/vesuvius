@@ -11,7 +11,7 @@ Even with `heroku run bash`, compiling stuff on Heroku was painful, time consumi
 
 With **Vesuvius**, this is no longer the case. During the deploy, **Vesuvius** will run all scripts located in `/scripts/libraries` and will move output files to a public directory.
 
-It comes with [PROJ](https://proj.org/) and [GEOS](https://trac.osgeo.org/geos/) as examples.
+It comes with [PROJ](https://proj.org/) and [GEOS](https://libgeos.org/) as examples.
 
 ## Automatic Setup
 
@@ -41,7 +41,7 @@ This is an example for the GEOS library:
 ```shell
 #!/bin/bash
 
-LIBRARY_VERSION=3.10.3
+LIBRARY_VERSION=3.11.0
 OUTPUT_LIBRARY_NAME="geos-${LIBRARY_VERSION}-heroku.tar.gz"
 
 curl -O https://ftp.osuosl.org/pub/osgeo/download/geos/geos-${LIBRARY_VERSION}.tar.bz2 \
