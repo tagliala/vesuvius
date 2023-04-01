@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIBRARY_VERSION=9.1.1
+LIBRARY_VERSION=9.2.0
 OUTPUT_LIBRARY_NAME=proj-${LIBRARY_VERSION}-heroku.tar.gz
 
 # Make PROJ's FindSqlite3.cmake happy

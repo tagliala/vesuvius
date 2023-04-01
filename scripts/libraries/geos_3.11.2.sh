@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIBRARY_VERSION=3.11.1
+LIBRARY_VERSION=3.12.0
 OUTPUT_LIBRARY_NAME="geos-${LIBRARY_VERSION}-heroku.tar.gz"
 
 curl -O https://ftp.osuosl.org/pub/osgeo/download/geos/geos-${LIBRARY_VERSION}.tar.bz2 \

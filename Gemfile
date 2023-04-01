@@ -7,14 +7,14 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '3.2.0'
+ruby '3.2.2'
 
 gem 'sinatra', '~> 3.0'
 
-gem 'puma', '~> 6.0'
+gem 'puma', '~> 6.2'
 
 gem 'rake', '~> 13.0'
-gem 'slim', '~> 4.1'
+gem 'slim', '~> 5.1'
 
 group :development do
   gem 'rubocop'
