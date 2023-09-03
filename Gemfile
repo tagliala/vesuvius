@@ -9,7 +9,7 @@ end
 
 ruby '3.2.2'
 
-gem 'sinatra', '~> 3.0'
+gem 'sinatra', '~> 3.1'
 
 gem 'puma', '~> 6.3'
 
